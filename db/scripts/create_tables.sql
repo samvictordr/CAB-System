@@ -16,7 +16,10 @@ CREATE TABLE Achievement (
     achievement_name VARCHAR(100) NOT NULL,
     description TEXT,
     course_id INT,
-    FOREIGN KEY (course_id) REFERENCES Course(course_id) ON DELETE CASCADE
+    student_id INT,
+    completed BOOLEAN DEFAULT FALSE,
+    FOREIGN KEY (course_id) REFERENCES Course(course_id) ON DELETE CASCADE,
+    FOREIGN KEY (student_id) REFERENCES Student(student_id) ON DELETE CASCADE
 );
 
 CREATE TABLE Badge (

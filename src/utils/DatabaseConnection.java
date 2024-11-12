@@ -5,9 +5,9 @@ import java.sql.SQLException;
 public class DatabaseConnection {
     // Database URL, username, and password for connecting to MySQL database.
     // Update these values with your own database credentials
-    private static final String DB_URL = "jdbc:mysql://<YOUR_AZURE_DATABASE_HOST>/<YOUR_DATABASE_NAME>";
-    private static final String USER = "<YOUR_DATABASE_USERNAME>";
-    private static final String PASSWORD = "<YOUR_DATABASE_PASSWORD>";
+    private static final String DB_URL = "jdbc:mysql://db:3306/bankdb";
+    private static final String USER = "root";
+    private static final String PASSWORD = "rootpassword";
 
     /**
      * Establishes a connection to the MySQL database.

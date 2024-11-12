@@ -1,8 +1,12 @@
+package services;
+
+import java.sql.Connection;
+
 public class AwardService {
     private AchievementService achievementService;
 
-    public AwardService() {
-        this.achievementService = new AchievementService();
+    public AwardService(Connection dbConnection) {
+        this.achievementService = new AchievementService(dbConnection);
     }
 
     /**
@@ -12,11 +16,11 @@ public class AwardService {
      * @param courseId The ID of the course.
      */
     public void awardCertificationIfEligible(int studentId, int courseId) {
-        boolean eligible = achievementService.verifyAchievement(studentId, courseId);
+        boolean eligible = achievementService.verifyCourseCompletion(studentId, courseId);
         if (eligible) {
-            achievementService.awardCertificate(studentId, courseId);
+            achievementService.awardCertification(studentId, courseId);
         } else {
-            System.out.println("Student ID " + studentId + " has not met the requirements for course ID " + courseId);
+            System.out.println("Student ID " + studentId + " has not completed course ID " + courseId);
         }
     }
 
@@ -35,3 +39,4 @@ public class AwardService {
         }
     }
 }
+
