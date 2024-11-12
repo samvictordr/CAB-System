@@ -33,7 +33,7 @@ fi
 
 # Run the Java application
 echo "Running the application..."
-java -cp ".:lib/mysql-connector-j-9.1.0.jar:bin" services.MainApplication &
+java -cp ".:lib/mysql-connector-j-9.1.0.jar:bin" services.MainApplication
 run_pid=$!
 spinner $run_pid
 wait $run_pid

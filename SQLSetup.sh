@@ -4,7 +4,7 @@
 # Script to execute all SQL scripts in the db/scripts directory against a MySQL Docker container
 
 # Configuration
-MYSQL_CONTAINER_NAME="CABBase"       # Replace with your MySQL Docker container name
+MYSQL_CONTAINER_NAME="CABMain"       # Replace with your MySQL Docker container name
 DATABASE_NAME="CABS"                       # Replace with your target database name
 MYSQL_USER="root"                            # Replace with your MySQL username
 MYSQL_PASSWORD="rootpassword"                # Replace with your MySQL password
