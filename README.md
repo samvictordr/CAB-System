@@ -1,4 +1,4 @@
- # CABS ![example workflow](https://github.com/samvictordr/CAB-System/actions/workflows/Build.yml/badge.svg)
+ # CABS ![buildstat](https://github.com/samvictordr/CAB-System/actions/workflows/Build.yml/badge.svg)
 Java application backend for certificates and badges cross validation and digital signature verification. Currently a work in progress.
 
 ## Installation and Set-up instructions(Local Setup):
