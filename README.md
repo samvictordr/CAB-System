@@ -1,5 +1,5 @@
  # CABS 
-Java application for certificates and badges cross validation and digital signature verification. Currently a work in progress.
+Java application backend for certificates and badges cross validation and digital signature verification. Currently a work in progress.
 
 ## Installation and Set-up instructions(Local Setup):
 clone the project, navigate into the folder you downloaded. Run this to set the MySQL database tables set up:
