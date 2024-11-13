@@ -16,3 +16,15 @@ chmod +x build.sh
 ./build.sh
 ```
 
+## Setup and build on Docker:
+Clone the project, navigate into the uncompressed folder, and then:
+
+```shell
+docker-compose up --build
+```
+
+After which the image should build and run. At this point, you can see the built container running on your docker dashboard. To attach this container to your terminal, use ```docker ps``` to find your container ID and then run:
+
+```shell
+docker attach <container_id>
+```
